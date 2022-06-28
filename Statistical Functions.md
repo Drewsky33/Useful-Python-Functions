@@ -13,3 +13,9 @@ def weighted_mean(distribution, weights):
     return sum(weighted_sum) / sum(weights)
  ```
 
+**With numpy**
+
+``` python 
+numpy.average(a, axis=None, weights=None, returned=False, *, keepdims=<no value>)
+
+```
