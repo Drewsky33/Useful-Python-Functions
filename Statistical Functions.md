@@ -19,3 +19,24 @@ def weighted_mean(distribution, weights):
 numpy.average(a, axis=None, weights=None, returned=False, *, keepdims=<no value>)
 
 ```
+## Calculating the median: when we have an open-ended dataset
+
+``` python 
+# Sort values in column in ascending order 
+new_df = df['col'].copy()
+new_df = new_df.replace({'value': replaced_value})
+new_df = new_df.astype(int)
+new_df_sorted = new_df.sort_values()
+
+# Calculate the median, first we need to find the middle indices
+middle_indices = [int((len(new_df_sorted) / 2) - 1),
+                 int((len(new_df_sorted) / 2))
+                 ]
+
+# Index values with boolean mask 
+middle_values = new_df_sorted.iloc[middle_indices]
+
+# Calculate the median between middle values 
+median = middle_values.mean()
+
+```
