@@ -101,3 +101,9 @@ def get_standard_dev(array):
     return sqrt(variance)
     
 ```
+
+** IN pandas**
+
+``` python
+
+df['col'].std()
