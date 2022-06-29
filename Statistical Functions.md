@@ -63,7 +63,7 @@ mode_method = df['col'].mode()
 
 ```
 
-## Calculating the variance: Distance from the mean
+## Calculating the variance: Average Squared Distance from the mean
 
 ``` python
 def get_variance(array):
