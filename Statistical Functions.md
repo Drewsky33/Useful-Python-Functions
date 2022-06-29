@@ -102,8 +102,10 @@ def get_standard_dev(array):
     
 ```
 
-** IN pandas**
+**IN pandas**
 
 ``` python
 
 df['col'].std()
+
+```
