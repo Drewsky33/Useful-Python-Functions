@@ -78,3 +78,26 @@ def get_variance(array):
         
     return sum(distance) / len(distance)
 ```
+
+## Compute the standard deviation: The distance from the mean
+
+``` python
+
+def get_standard_dev(array):
+    reference_point = sum(array) / len(array)
+    distance = []
+    
+    # Loop through each value and calculate the variance 
+    
+    for value in array:
+        squared_distance = (value - reference_point) ** 2
+        
+        distance.append(squared_distance)
+    
+    # Compute the variance 
+    variance = sum(distance) / len(distance)
+    
+    # Compute the standard_deviation
+    return sqrt(variance)
+    
+```
