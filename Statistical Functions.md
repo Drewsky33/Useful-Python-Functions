@@ -40,3 +40,19 @@ middle_values = new_df_sorted.iloc[middle_indices]
 median = middle_values.mean()
 
 ```
+
+## Calculate the mode: When we have ordinal values denoted with text.
+
+``` python 
+
+def calc_mode(array):
+    counts = {}
+    
+    for value in array:
+        if value in counts:
+            counts[value] += 1
+        else:
+            counts[value] = 1
+    return max(counts, key = counts.get)
+
+```
