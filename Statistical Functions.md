@@ -56,3 +56,9 @@ def calc_mode(array):
     return max(counts, key = counts.get)
 
 ```
+**WITH pandas**
+
+``` python 
+mode_method = df['col'].mode()
+
+```
