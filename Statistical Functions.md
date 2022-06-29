@@ -62,3 +62,19 @@ def calc_mode(array):
 mode_method = df['col'].mode()
 
 ```
+
+## Calculating the variance: Distance from the mean
+
+``` python
+def get_variance(array):
+    reference_point = sum(array) / len(array)
+    distance = []
+    
+    # Loop through values and square them 
+    for value in array:
+        squared_distance = (value-reference_point)** 2
+        
+        distance.append(squared_distance)
+        
+    return sum(distance) / len(distance)
+```
