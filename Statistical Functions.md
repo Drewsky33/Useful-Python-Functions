@@ -109,3 +109,18 @@ def get_standard_dev(array):
 df['col'].std()
 
 ```
+## Compute the Z score
+
+``` python
+
+def z_score(value, array, bessel = 0):
+    mean = sum(array) / len(array)
+    
+    from numpy import std
+    st_dev = std(array, ddof = bessel)
+    
+    distance = value - mean
+    z = distance / st_dev
+    
+    return z
+```
