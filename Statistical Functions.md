@@ -124,3 +124,13 @@ def z_score(value, array, bessel = 0):
     
     return z
 ```
+
+## Standardizing  a series
+
+``` python
+
+standardized_distro = Series.apply(
+    lambda x: (x - Series.mean()) / Series.std()
+    )
+
+```
