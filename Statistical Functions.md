@@ -125,7 +125,7 @@ def z_score(value, array, bessel = 0):
     return z
 ```
 
-## Standardizing  a series
+## Standardizing  a series: useful when comparing variables measured on a different scale. 
 
 ``` python
 
